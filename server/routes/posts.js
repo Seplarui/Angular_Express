@@ -7,6 +7,9 @@ const PostAPI = 'https://jsonplaceholder.typicode.com';
 
 // GET POST 
 
+/*router.get('/', (req, res) => {
+    res.send('It Works');
+});*/
 router.get('/', (req, res) => {
 
     axios.get(`${PostAPI}/posts`).then(posts => {
